@@ -12,5 +12,9 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <h1>Welcome to BlogTemplate</h1>;
+  return (
+    <div className="bg-gray-100 min-h-screen rounded-lg p-6">
+      <h1 className="text-gray-800 text-2xl font-bold">Blog Template</h1>
+    </div>
+  );
 }

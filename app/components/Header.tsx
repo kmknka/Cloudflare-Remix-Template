@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "@remix-run/react";
 import { useOverlay } from "~/context/OverlayContext";
+import HeaderNavigation from "./HeaderNavigation";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -47,7 +48,7 @@ export default function Header() {
             : ""
         }
         ${isMobile ? (showHeader ? "translate-y-0" : "-translate-y-full") : ""}
-        bg-gray-400
+        bg-gray-700 shadow-md
       `}
     >
       {/*モバイル表示とPC表示でヘッダーの表示を切り替え*/}
@@ -62,6 +63,9 @@ export default function Header() {
               Blog
             </Link>
           </div>
+        </div>
+        <div className="hidden md:block justify-end mr-10">
+          <HeaderNavigation />
         </div>
 
         {/* ハンバーガー（モバイル表示） */}
