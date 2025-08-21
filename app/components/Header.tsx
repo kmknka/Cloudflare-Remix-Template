@@ -52,7 +52,7 @@ export default function Header() {
       `}
     >
       {/*モバイル表示とPC表示でヘッダーの表示を切り替え*/}
-      <nav className="max-w-[85rem] mx-auto flex justify-between items-center px-4 py-2 sm:px-6 lg:px-8 relative">
+      <nav className="w-full max-w-screen-lg mx-auto flex justify-between items-center px-4 py-2 sm:px-6 lg:px-8 relative">
         {/* ロゴ */}
         <div className="flex items-center">
           <div className="text-lg font-title font-bold text-white">
